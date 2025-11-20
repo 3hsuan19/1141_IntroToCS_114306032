@@ -1,0 +1,91 @@
+/* Body styling */
+body {
+    color: #333333;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading styling */
+h1 {
+    font-family: Georgia, serif;
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+    background-color: #333333;
+    display: flex;
+    gap: 2em;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+.navbar a:hover {
+    background-color: #555555;
+    border-radius: 4px;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #444444;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5em;
+}
+
+.navbar li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu option {
+    color: white;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-menu option:hover {
+    background-color: #555555;
+}
+
+/* Media query for all media types */
+@media all {
+    body {
+        margin: 0;
+        padding-top: 4em;
+    }
+}
+
+/* Media query for print */
+@media print {
+    .navbar {
+        display: none;
+    }
+    
+    body {
+        background-color: white;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+}

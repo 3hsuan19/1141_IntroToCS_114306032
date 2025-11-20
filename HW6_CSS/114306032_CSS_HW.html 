@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="StudentID_CSS_HW.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-panel">
+            <div class="photo-panel">
+                <img src="images/profile.jpg" alt="Profile picture">
+            </div>
+
+            <div class="text-content">
+                <div class="about-me">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm a student passionate about web development and technology. I love creating beautiful and functional websites while continuously learning new skills.</p>
+                </div>
+
+                <div class="contact-info">
+                    <h2>Contact Info</h2>
+                    <ul class="contact-list">
+                        <li><a href="mailto:your.email@example.com">Email: your.email@example.com</a></li>
+                        <li><a href="https://github.com/yourprofile" target="_blank">GitHub: github.com/yourprofile</a></li>
+                        <li><a href="tel:+1234567890">Phone: +1 (234) 567-8900</a></li>
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn: linkedin.com/in/yourprofile</a></li>
+                    </ul>
+                </div>
+
+                <!-- School Logo -->
+                <div class="school-logo">
+                    <img src="images/nccu-logo.png" alt="NCCU logo">
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right-panel">
+            <!-- Education Section -->
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <div class="year">2024 - Now</div>
+                    <div class="description">National Chengchi University, Department of Computer Science</div>
+                </div>
+                <div class="education-item">
+                    <div class="year">2020 - 2024</div>
+                    <div class="description">High School Name, Science Stream</div>
+                </div>
+            </div>
+
+            <!-- Skill Section -->
+            <div class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skill-container">
+                    <span class="tag">Python</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">React</span>
+                </div>
+            </div>
+
+            <!-- Homework & Lab Section -->
+            <div class="section">
+                <h2 class="section-title">Homework & Lab</h2>
+                <div class="hw-lab-container">
+                    <!-- Homework Column -->
+                    <div class="hw-column">
+                        <h3>Homework</h3>
+                        <ul class="hw-list">
+                            <li><a href="https://github.com/yourprofile/hw1" target="_blank">HTML Assignment 1</a></li>
+                            <li><a href="https://github.com/yourprofile/hw2" target="_blank">CSS Layout Challenge</a></li>
+                            <li><a href="https://github.com/yourprofile/hw3" target="_blank">Responsive Design</a></li>
+                            <li><a href="https://github.com/yourprofile/hw4" target="_blank">JavaScript Basics</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Lab Column -->
+                    <div class="lab-column">
+                        <h3>Lab</h3>
+                        <ul class="lab-list">
+                            <li><a href="https://github.com/yourprofile/lab1" target="_blank">Lab 1: Web Basics</a></li>
+                            <li><a href="https://github.com/yourprofile/lab2" target="_blank">Lab 2: Flexbox</a></li>
+                            <li><a href="https://github.com/yourprofile/lab3" target="_blank">Lab 3: Grid Layout</a></li>
+                            <li><a href="https://github.com/yourprofile/lab4" target="_blank">Lab 4: DOM Manipulation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Favorite Music</h2>
+                <div class="music-container">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="music-item">
+                        <img src="images/music1.jpg" alt="Album cover for song 1">
+                        <div class="music-title">Song Title 1</div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="music-item">
+                        <img src="images/music2.jpg" alt="Album cover for song 2">
+                        <div class="music-title">Song Title 2</div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="music-item">
+                        <img src="images/music3.jpg" alt="Album cover for song 3">
+                        <div class="music-title">Song Title 3</div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="music-item">
+                        <img src="images/music4.jpg" alt="Album cover for song 4">
+                        <div class="music-title">Song Title 4</div>
+                    </a>
+                </div>
+                <p class="music-note">These are my go-to songs for studying and relaxing. I love listening to them during breaks between classes or while working on projects.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

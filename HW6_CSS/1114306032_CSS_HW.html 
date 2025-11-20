@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norah Huang - CSS Homework</title>
+    <link rel="stylesheet" href="114306032_CSS_HW.css">
+</head>
+<body>
+
+    <div class="main-container">
+
+        <div class="left-panel">
+            
+            <div class="photo-panel">
+                <img src="profile.jpg" alt="A photo of Norah Huang, NCCU MIS student." class="profile-img">
+            </div>
+
+            <div class="text-content">
+                <h1 class="name">Norah Huang</h1>
+                <p class="title">NCCU MIS Student</p>
+
+                <h2 class="section-title">About Me</h2>
+                <p class="about-me-text">
+                    I am a student in the Department of Management Information Systems at NCCU. I like programming, UX design, and data analysis.
+                </p>
+
+                <h2 class="section-title">Contact</h2>
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> <a href="mailto:114306032@nccu.edu.tw">114306032@nccu.edu.tw</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/3hsuan19" target="_blank">3hsuan19</a></li>
+                </ul>
+
+                <img src="nccu.jpg" alt="National Chengchi University (NCCU) Logo" class="school-icon">
+            </div>
+        </div>
+
+        <div class="right-panel">
+            
+            <div class="section education">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="timeline-item">
+                    <span class="year">2025 - Now</span>
+                    <span class="description">B.S. in Management Information Systems, NCCU</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">2023 - 2025</span>
+                    <span class="description">High School Student in CLHS</span>
+                </div>
+            </div>
+
+            <div class="section skill">
+                <h2 class="section-title">Skill</h2>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Git</span>
+                </div>
+            </div>
+
+            <div class="section hw-lab">
+                <h2 class="section-title">Homework & Lab</h2>
+                
+                <div class="hw-lab-container">
+                    
+                    <div class="hw-column">
+                        <h3>Homework</h3>
+                        <ul>
+                            <li><a href="URL_TO_HW1_GITHUB" target="_blank">HW1 - GitHub</a></li>
+                            <li><a href="URL_TO_HW2_GITHUB" target="_blank">HW2 - Deep Dream Generator</a></li>
+                            <li><a href="URL_TO_HW3_GITHUB" target="_blank">HW3 - Excel I</a></li>
+                            <li><a href="URL_TO_HW4_GITHUB" target="_blank">HW4 - Excel II</a></li>
+                            <li><a href="URL_TO_HW5_GITHUB" target="_blank">HW5 - Portfolio</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="lab-column">
+                        <h3>Lab</h3>
+                        <ul>
+                            <li><a href="URL_TO_LAB1_GITHUB" target="_blank">Lab1 - Personal Info</a></li>
+                            <li><a href="URL_TO_LAB2_GITHUB" target="_blank">Lab2 - Homepage</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section favorite-music">
+                <h2 class="section-title">Favorite Music</h2>
+                
+                <div class="music-row">
+                    <a href="URL_TO_MUSIC_1" target="_blank" class="music-item">
+                        <img src="images/music_icon_1.png" alt="Album cover for 我把我的青春給你">
+                        <p>我把我的青春給你</p>
+                    </a>
+                    
+                    <a href="URL_TO_MUSIC_2" target="_blank" class="music-item">
+                        <img src="images/music_icon_2.png" alt="Album cover for 灰色と青">
+                        <p>灰色と青</p>
+                    </a>
+                    
+                    <a href="URL_TO_MUSIC_3"

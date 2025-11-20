@@ -1,0 +1,233 @@
+:root {
+    --main-bg-color: #f4f4f4;
+    --container-bg-color: #ffffff;
+    --left-panel-color: #3f729b;
+    --text-on-dark: #ffffff;
+    --section-border-color: #dddddd;
+    --tag-bg-color: #e0e0e0;
+    --tag-text-color: #333333;
+    --card-bg-color: #f8f8f8;
+    --link-color: #007bff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    width: 1000px;
+    background-color: var(--container-bg-color);
+    display: flex;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-panel {
+    width: 30%;
+    background-color: var(--left-panel-color);
+    color: var(--text-on-dark);
+    padding-bottom: 20px;
+}
+
+.photo-panel {
+    width: 100%;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-content {
+    padding: 0 20px;
+    padding-top: 15px;
+}
+
+.name {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.8em;
+}
+
+.title {
+    margin: 0 0 15px 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.about-me-text {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.9em;
+}
+
+.contact-list a {
+    color: var(--text-on-dark);
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+.school-icon {
+    display: block;
+    width: 40px;
+    height: auto;
+    margin: 20px auto 0 auto;
+    opacity: 0.7;
+}
+
+.right-panel {
+    width: 70%;
+    padding: 30px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid var(--section-border-color);
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.year {
+    display: block;
+    width: 100px;
+    font-weight: bold;
+    color: #555;
+    flex-shrink: 0;
+}
+
+.description {
+    display: block;
+    flex-grow: 1;
+    color: #333;
+}
+
+
+.tag {
+    display: inline-block;
+    background-color: var(--tag-bg-color);
+    color: var(--tag-text-color);
+    padding: 5px 12px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+
+.hw-lab-container {
+    display: flex;
+    gap: 20px;
+}
+
+.hw-column, .lab-column {
+    flex: 1;
+    background-color: var(--card-bg-color);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.hw-column h3, .lab-column h3 {
+    margin-top: 0;
+    font-size: 1.1em;
+    border-bottom: 1px dashed var(--section-border-color);
+    padding-bottom: 5px;
+}
+
+.hw-column ul, .lab-column ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.hw-column li, .lab-column li {
+    margin-bottom: 8px;
+}
+
+.hw-column a, .lab-column a {
+    color: #333;
+    text-decoration: none;
+}
+
+.hw-column a:hover, .lab-column a:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.music-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.music-item {
+    display: block;
+    width: 20%;
+    text-decoration: none;
+    color: #333;
+}
+
+.music-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.2s;
+}
+
+.music-item img:hover {
+    transform: scale(1.05);
+}
+
+.music-item p {
+    font-size: 0.85em;
+    margin: 0;
+}
+
+.music-note {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 10px;
+    border-top: 1px dotted var(--section-border-color);
+    padding-top: 10px;
+}
