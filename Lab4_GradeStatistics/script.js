@@ -1,49 +1,51 @@
-let count = 0;
+function add(a, b) {
+    return a + b;
+}
 
-document.getElementById("submitBtn").addEventListener("click", function () {
-  const math = Number(document.getElementById("math").value);
-  const english = Number(document.getElementById("english").value);
+function subtract(a, b) {
+    return a - b;
+}
 
-  if (isNaN(math) || isNaN(english)) {
-    alert("Please enter valid numbers");
-    return;
-  }
+function multiply(a, b) {
+    return a * b;
+}
 
-  count++;
+function divide(a, b) {
+    if (b === 0) {
+        return "Error: Division by zero";
+    }
+    return a / b;
+}
 
-  const avg = ((math + english) / 2).toFixed(2);
+function calculate() {
+    const num1 = parseFloat(document.getElementById("num1").value);
+    const num2 = parseFloat(document.getElementById("num2").value);
+    const operator = document.getElementById("operator").value;
+    let result;
 
-  const tbody = document.querySelector("#gradeTable tbody");
-  const row = document.createElement("tr");
+    if (isNaN(num1) || isNaN(num2)) {
+        document.getElementById("result").textContent = "Please enter valid numbers.";
+        return;
+    }
 
-  row.innerHTML = `
-    <td>${count}</td>
-    <td>${math}</td>
-    <td>${english}</td>
-    <td>${avg}</td>
-  `;
+    switch (operator) {
+        case "+":
+            result = add(num1, num2);
+            break;
+        case "-":
+            result = subtract(num1, num2);
+            break;
+        case "*":
+            result = multiply(num1, num2);
+            break;
+        case "/":
+            result = divide(num1, num2);
+            break;
+    }
 
-  tbody.appendChild(row);
+    if (typeof result === "number") {
+        result = result.toFixed(2);
+    }
 
-  updateColumnAverages();
-});
-
-function updateColumnAverages() {
-  const rows = document.querySelectorAll("#gradeTable tbody tr");
-
-  let mathSum = 0;
-  let engSum = 0;
-
-  rows.forEach(row => {
-    mathSum += Number(row.children[1].textContent);
-    engSum += Number(row.children[2].textContent);
-  });
-
-  const mathAvg = (mathSum / rows.length).toFixed(2);
-  const engAvg = (engSum / rows.length).toFixed(2);
-  const overallAvg = ((mathSum + engSum) / (rows.length * 2)).toFixed(2);
-
-  document.getElementById("mathAvg").textContent = mathAvg;
-  document.getElementById("engAvg").textContent = engAvg;
-  document.getElementById("overallAvg").textContent = overallAvg;
+    document.getElementById("result").textContent = "Result: " + result;
 }

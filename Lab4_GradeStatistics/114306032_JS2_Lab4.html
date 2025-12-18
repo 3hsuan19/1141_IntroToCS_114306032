@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Grade Statistics</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Grade Statistics</h2>
+<div class="calculator">
+    <h2>Calculator</h2>
 
-<div class="input-area">
-  Math: <input type="number" id="math">
-  English: <input type="number" id="english">
-  <button id="submitBtn">Submit</button>
+    <label>Number 1</label>
+    <input type="number" id="num1">
+
+    <label>Operator</label>
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <label>Number 2</label>
+    <input type="number" id="num2">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="result"></p>
 </div>
-
-<table id="gradeTable">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Math</th>
-      <th>English</th>
-      <th>Average</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-  <tfoot>
-    <tr>
-      <th>Avg</th>
-      <th id="mathAvg">0</th>
-      <th id="engAvg">0</th>
-      <th id="overallAvg">0</th>
-    </tr>
-  </tfoot>
-</table>
 
 <script src="script.js"></script>
 </body>
